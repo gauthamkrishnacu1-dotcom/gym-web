@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fight Club | Multi-class AC Gym</title>
+<meta name="description" content="Multi-class AC gym with strength training, yoga, Zumba, kick boxing and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="Home">
+    <img src="logo.png" width="48" height="40" alt="" aria-hidden="true">
+    <span data-fill="gymName">Fight Club</span>
+  </a>
+  <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav">
+    <a href="#top">Home</a>
+    <a href="#membership">Membership</a>
+    <a href="#menu">Menu</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact us</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 class="title">BUILD<span>Yourself.</span></h1>
+
+    <div class="hero-services">
+      <h2>Our available services.</h2>
+      <ul id="heroServices"></ul>
+    </div>
+
+    <p class="about" data-fill="tagline">Multi-class AC gym.</p>
+
+    <aside class="offer">
+      <p class="offer-head">Become a member today.</p>
+      <div class="offer-card">
+        <p>New member.<br>Pay just,</p>
+        <p class="old">&#8377;<span data-fill="oldPrice">1,200</span></p>
+        <p class="new">&#8377;<span data-fill="newPrice">900</span>/month</p>
+        <a class="btn" data-wa href="#contact">Join now</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section" id="membership">
+    <h2>Membership plans</h2>
+    <div class="plans" id="plans"></div>
+  </section>
+
+  <section class="section alt" id="menu">
+    <h2>Gym menu</h2>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Services</h2>
+    <div class="service-grid" id="serviceGrid"></div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact us</h2>
+    <div class="contact">
+      <p><strong>Phone</strong><a data-tel href="tel:" data-fill="displayPhone">+91 70257 11627</a></p>
+      <p><strong>Address</strong><span data-fill="address">Ernakulam, Kerala</span></p>
+      <p><strong>Timings</strong><span data-fill="timings">Mon&ndash;Sat, 5:30 AM &ndash; 9:30 PM</span></p>
+      <a class="btn" data-wa href="#contact">Message us on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> <span data-fill="gymName">Fight Club</span>. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
